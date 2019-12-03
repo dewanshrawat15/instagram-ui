@@ -19,15 +19,21 @@
 		margin-top: 80px;
 		padding-top: 40px;
 		padding-bottom: 40px;
-		border: 1px solid #f8f8f8;
+		border: 1px solid #e8e8e8;
+		border-radius: 3px;
 		background: #fff;
+	}
+
+	.wrapper{
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 
 	.intro{
 		color: #999;
 		font-size: 16px;
-		padding-left: 32px;
-		padding-right: 32px;
+		padding-left: 18px;
+		padding-right: 18px;
 		font-weight: bolder;
 	}
 
@@ -38,13 +44,32 @@
 		padding-bottom: 6px;
 		margin-left: 12px;
 		margin-right: 12px;
+		cursor: pointer;
 		border-radius: 4px;
 	}
 
 	.fb-login-text-class{
 		margin-left: 5px;
-		font-size: 15px;
+		font-size: 16px;
 		font-weight: 500;
+	}
+
+	.padded{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.or-logo span{
+		font-size: 15px;
+		padding:0 10px; 
+		background:#fff;
+		color: #999;
+	}
+
+	.or-logo{
+		line-height: 2px;
+		margin: 10px 0 20px;
+		border-bottom: 1.2px solid #e8e8e8; 
 	}
 
 	@media(max-width: 991px){
@@ -67,21 +92,32 @@
 			</div>
 			<div class="col-md-4">
 				<div class="form-outline">
-					<center>
-						<img class="img-responsive" height="12" width="200" src="title.png">
-					</center>
-					<br>
-					<center>
-						<p class="intro">Sign up to see photos and videos from your friends.</p>
-					</center>
-					<br><br>
-					<center>
-						<div class="facebook-login-btn">
-							<center>
-								<i class="fa fa-facebook-official" style="color: #fff; font-size: 15px;"></i>&nbsp;<span class="fb-login-text-class">Login with Facebook</span>
-							</center>
-						</div>
-					</center>
+					<div class="wrapper">
+						<center>
+							<img class="img-responsive" height="12" width="200" src="title.png">
+						</center>
+						<br>
+						<center>
+							<p class="intro">Sign up to see photos and videos from your friends.</p>
+						</center>
+						<br><br>
+						<center>
+							<div class="facebook-login-btn">
+								<center>
+									<i class="fa fa-facebook-official" style="color: #fff; font-size: 16px;"></i>&nbsp;<span class="fb-login-text-class">Login with Facebook</span>
+								</center>
+							</div>
+						</center>
+						<center>
+							<div class="padded">
+								<h2 class="or-logo">
+									<span>
+										OR
+									</span>
+								</h2>
+							</div>
+						</center>
+					</div>
 				</div>
 			</div>
 		</div>
