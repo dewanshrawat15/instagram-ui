@@ -12,13 +12,14 @@
 <style type="text/css">
 
 	body{
+		font-family: "Google Sans";
 		background: #fafafa;
 	}
 
 	.form-outline{
-		margin-top: 80px;
+		margin-top: 60px;
 		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 		border: 1px solid #e8e8e8;
 		border-radius: 3px;
 		background: #fff;
@@ -55,6 +56,7 @@
 	}
 
 	.padded{
+		margin-top: 6px;
 		padding-right: 10px;
 		padding-left: 10px;
 	}
@@ -70,6 +72,48 @@
 		line-height: 2px;
 		margin: 10px 0 20px;
 		border-bottom: 1.2px solid #e8e8e8; 
+	}
+
+	.emailmobile, .fullname, .username, .password{
+		margin-top: 8px;
+		width: 275px;
+		border-radius: 2px;
+		outline: none;
+		border: none;
+		background: #f8f8f8;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 8px;
+		border: 1px solid #eee;
+	}
+
+	::placeholder{
+		font-size: 13px;
+	}
+
+	.signup-btn{
+		background: #3897f0;
+		padding-top: 6px;
+		color: #fff;
+		padding-bottom: 6px;
+		margin-left: 12px;
+		margin-right: 12px;
+		cursor: pointer;
+		border-radius: 4px;
+	}
+
+	.tnc{
+		color: #999;
+		font-size: 15px;
+		padding-left: 32px;
+		padding-right: 32px;
+		font-weight: bolder;
+	}
+
+	.tnc a{
+		text-decoration: none;
+		color: #787878;
+		font-weight: 900;
 	}
 
 	@media(max-width: 991px){
@@ -94,15 +138,15 @@
 				<div class="form-outline">
 					<div class="wrapper">
 						<center>
-							<img class="img-responsive" height="12" width="200" src="title.png">
+							<img class="img-responsive" height="12" width="175" src="title.png">
 						</center>
 						<br>
 						<center>
-							<p class="intro">Sign up to see photos and videos from your friends.</p>
+							<p class="intro"><b>Sign up to see photos and videos from your friends.</b></p>
 						</center>
-						<br><br>
+						
 						<center>
-							<div class="facebook-login-btn">
+							<div class="facebook-login-btn" style="margin-bottom: 16px; margin-top: 16px;">
 								<center>
 									<i class="fa fa-facebook-official" style="color: #fff; font-size: 16px;"></i>&nbsp;<span class="fb-login-text-class">Login with Facebook</span>
 								</center>
@@ -117,8 +161,53 @@
 								</h2>
 							</div>
 						</center>
+						<center>
+							<form>
+								<input class="emailmobile" type="text" name="emailmobile" placeholder="Mobile Number or Email">
+								<input class="fullname" type="text" name="fullname" placeholder="Full Name">
+								<input class="username" type="text" name="username" placeholder="Username">
+								<input class="password" type="text" name="password" placeholder="Password">
+							</form>
+						</center>
+						<br>
+						<div class="signup-btn">
+							<center>
+								<span class="fb-login-text-class">Sign Up</span>
+							</center>
+						</div>
+						<br>
+						<center>
+							<p class="tnc">
+								By signing up, you agree to our <a href="https://help.instagram.com/581066165581870"><b>Terms</b></a> , <a href="https://help.instagram.com/519522125107875"><b>Data Policy</b></a> and <a href="https://www.instagram.com/legal/cookies/"><b>Cookies Policy</b></a> .
+							</p>
+						</center>
 					</div>
 				</div>
+				<div class="form-outline" style="margin-top: 15px; padding-top: 20px; padding-bottom: 8px;">
+					<center>
+						<p style="color: #15171c;">
+							Have an account? <a href="" style="text-decoration: none; color: #3897f0">Log In</a>
+						</p>
+					</center>
+				</div>
+				<br>
+				<center>
+					<p>
+						Get the app.
+					</p>
+				</center>
+				<br>
+				<center>
+					<div class="row">
+						<div class="col-md-5 col-md-offset-1">
+							<a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.signupPage.badge&mt=8&vt=lo"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" class="img-responsive"></a>
+						</div>
+						<div class="col-md-5">
+							<img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" class="img-responsive">
+						</div>
+					</div>
+				</center>
+				<br><br>
 			</div>
 		</div>
 	</div>
